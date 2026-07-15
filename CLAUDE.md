@@ -19,3 +19,8 @@
 1. Plan before coding.
 2. Commit frequently.
 3. Test before pushing.
+
+## Commit Guidelines
+
+- Use Conventional Commits for every commit.
+- Keep commits focused on a single logical change.
