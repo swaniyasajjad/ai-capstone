@@ -87,3 +87,7 @@ GitHub: <https://github.com/swaniyasajjad>
 ## License
 
 This project is licensed under the MIT License.
+
+## Acknowledgements
+
+This project was developed as part of an AI-assisted development capstone assignment with feedback from an AI assistant.
