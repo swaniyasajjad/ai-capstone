@@ -1,0 +1,135 @@
+/* ---------- Base reset ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2f7, #e6ecf5);
+  color: #2d3142;
+}
+
+/* ---------- Centering wrapper ---------- */
+.settings-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+/* ---------- Card ---------- */
+.settings-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 32px 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(45, 49, 66, 0.12);
+}
+
+.settings-card h1 {
+  margin: 0 0 24px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #2d3142;
+}
+
+/* ---------- Form groups ---------- */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #4a4e69;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  padding: 10px 12px;
+  border: 1px solid #d7dbe3;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #fafbfc;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  outline: none;
+  border-color: #7c9cf0;
+  box-shadow: 0 0 0 3px rgba(124, 156, 240, 0.25);
+}
+
+/* Invalid field styling, driven by aria-invalid */
+input[aria-invalid="true"] {
+  border-color: #e14b4b;
+  background-color: #fff5f5;
+}
+
+/* ---------- Error messages ---------- */
+.error-message {
+  min-height: 18px;
+  margin-top: 6px;
+  font-size: 0.82rem;
+  color: #d9302f;
+}
+
+/* ---------- Success message ---------- */
+.success-message {
+  min-height: 20px;
+  margin-top: 16px;
+  font-size: 0.95rem;
+  text-align: center;
+  color: #1f9254;
+  font-weight: 600;
+}
+
+/* ---------- Button ---------- */
+.save-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 10px;
+  background-color: #6c8ef5;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.save-btn:hover {
+  background-color: #5578e0;
+}
+
+.save-btn:active {
+  transform: translateY(1px);
+}
+
+.save-btn:focus-visible {
+  outline: 3px solid rgba(108, 142, 245, 0.5);
+  outline-offset: 2px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 480px) {
+  .settings-card {
+    padding: 24px 18px;
+    border-radius: 12px;
+  }
+
+  .settings-card h1 {
+    font-size: 1.3rem;
+  }
+}
