@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <link rel="stylesheet" href="Settings.css">
+</head>
+<body>
+
+  <form class="settings-form" id="settingsForm">
+    <h1>Settings</h1>
+
+    <section class="card">
+      <h2>Profile</h2>
+
+      <div class="field">
+        <label for="displayName">Display name</label>
+        <input type="text" id="displayName" name="displayName" placeholder="Your name">
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="name@company.com">
+      </div>
+
+      <div class="field">
+        <label for="timezone">Time zone</label>
+        <select id="timezone" name="timezone">
+          <option value="PKT">Pakistan standard time (PKT)</option>
+          <option value="ET">Eastern time (ET)</option>
+          <option value="CET">Central European time (CET)</option>
+          <option value="UTC">Coordinated universal time (UTC)</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Notifications</h2>
+
+      <label class="switch-row">
+        <span>Email updates</span>
+        <input type="checkbox" name="emailUpdates" checked>
+      </label>
+
+      <label class="switch-row">
+        <span>Push notifications</span>
+        <input type="checkbox" name="pushNotifications" checked>
+      </label>
+
+      <label class="switch-row">
+        <span>Weekly summary</span>
+        <input type="checkbox" name="weeklySummary">
+      </label>
+    </section>
+
+    <section class="card">
+      <h2>Appearance</h2>
+
+      <div class="field">
+        <label for="theme">Theme</label>
+        <select id="theme" name="theme">
+          <option value="system">System default</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="textSize">
+          <span>Text size</span>
+          <span id="textSizeOutput">16px</span>
+        </label>
+        <input type="range" id="textSize" name="textSize" min="12" max="20" step="1" value="16">
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Privacy</h2>
+
+      <label class="switch-row">
+        <span>Make profile public</span>
+        <input type="checkbox" name="profilePublic">
+      </label>
+    </section>
+
+    <div class="actions">
+      <button type="button" id="cancelBtn">Cancel</button>
+      <button type="submit" class="primary">Save changes</button>
+    </div>
+
+    <p class="status" id="statusMessage" role="status"></p>
+  </form>
+
+  <script src="Settings.js"></script>
+</body>
+</html>

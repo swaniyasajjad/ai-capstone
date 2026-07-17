@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 16px;
+  background: #f1efe8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #2c2c2a;
+}
+
+.settings-form {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.settings-form h1 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e0ddd3;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.card h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+
+.field label {
+  font-size: 13px;
+  color: #5f5e5a;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #d3d1c7;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+  color: #2c2c2a;
+  width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+input[type="range"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #b5d4f4;
+  border-color: #378ADD;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #378ADD;
+}
+
+.switch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.switch-row:not(:last-child) {
+  border-bottom: 1px solid #f1efe8;
+}
+
+.switch-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #378ADD;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+button {
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 8px;
+  border: 1px solid #d3d1c7;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  color: #2c2c2a;
+}
+
+button:hover {
+  background: #f1efe8;
+}
+
+button.primary {
+  background: #2c2c2a;
+  border-color: #2c2c2a;
+  color: #fff;
+}
+
+button.primary:hover {
+  background: #444441;
+}
+
+.status {
+  text-align: right;
+  font-size: 13px;
+  color: #3b6d11;
+  min-height: 18px;
+  margin-top: 10px;
+}
