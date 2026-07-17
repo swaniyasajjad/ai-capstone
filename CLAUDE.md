@@ -24,3 +24,11 @@
 
 - Use Conventional Commits for every commit.
 - Keep commits focused on a single logical change.
+
+## Project Rules
+
+1. Every form must include client-side validation before submission.
+2. Every input must have a descriptive label and accessible validation.
+3. HTML, CSS, and JavaScript must remain in separate files.
+4. AI-generated code must be manually tested before every commit.
+5. Every feature should include responsive design and clear user feedback.
